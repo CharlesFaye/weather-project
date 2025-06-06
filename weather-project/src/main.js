@@ -38,7 +38,7 @@ async function fetchData() {
           currentWeather.classList.add('hidden');
         }
         const data = await response.json();
-        weatherIcon.src = "images/weather.jpg"
+        weatherIcon.src = "/images/weather.jpg"
         weatherIcon.classList.add('object-cover')
         cityName.textContent = `Ville : ${data.name}`
         dateTime.textContent = `Timezone : ${data.timezone}`;
